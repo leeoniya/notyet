@@ -2,14 +2,14 @@
 * Copyright (c) 2019, Leon Sorokin
 * All rights reserved. (MIT Licensed)
 *
-* notnow.js
+* notyet.js (NotYet)
 * Lazy image & media loader
-* https://github.com/leeoniya/notnow (v0.1.0)
+* https://github.com/leeoniya/notyet (v0.1.0)
 */
 
 'use strict';
 
-function notnow(opts) {
+function notyet(opts) {
 	opts = opts || {};
 
 	var target = opts.target || document.body;
@@ -124,4 +124,4 @@ function notnow(opts) {
 	}
 }
 
-module.exports = notnow;
+module.exports = notyet;

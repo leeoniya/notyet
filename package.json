@@ -1,22 +1,22 @@
 {
-  "name": "notnow",
+  "name": "notyet",
   "version": "0.1.0",
   "description": "Lazy image & media loader",
-  "main": "./dist/notnow.cjs.js",
+  "main": "./dist/notyet.cjs.js",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leeoniya/notnow.git"
+    "url": "git+https://github.com/leeoniya/notyet.git"
   },
   "author": "Leon Sorokin <leeoniya@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leeoniya/notnow/issues"
+    "url": "https://github.com/leeoniya/notyet/issues"
   },
-  "homepage": "https://github.com/leeoniya/notnow#readme",
+  "homepage": "https://github.com/leeoniya/notyet#readme",
   "devDependencies": {
     "rollup": "^1.16.7",
     "rollup-plugin-buble": "^0.19.8",

@@ -6,13 +6,13 @@ import { terser } from 'rollup-plugin-terser';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 const ver = "v" + pkg.version;
-const urlVer = "https://github.com/leeoniya/notnow (" + ver + ")";
+const urlVer = "https://github.com/leeoniya/notyet (" + ver + ")";
 const banner = [
 	"/**",
 	"* Copyright (c) " + new Date().getFullYear() + ", Leon Sorokin",
 	"* All rights reserved. (MIT Licensed)",
 	"*",
-	"* notnow.js",
+	"* notyet.js (NotYet)",
 	"* Lazy image & media loader",
 	"* " + urlVer,
 	"*/",
@@ -21,10 +21,10 @@ const banner = [
 
 export default [
 	{
-		input: './src/notnow.js',
+		input: './src/notyet.js',
 		output: {
-			name: 'notnow',
-			file: './dist/notnow.umd.js',
+			name: 'notyet',
+			file: './dist/notyet.umd.js',
 			format: 'umd',
 			banner,
 		},
@@ -34,10 +34,10 @@ export default [
 		]
 	},
 	{
-		input: './src/notnow.js',
+		input: './src/notyet.js',
 		output: {
-			name: 'notnow',
-			file: './dist/notnow.cjs.js',
+			name: 'notyet',
+			file: './dist/notyet.cjs.js',
 			format: 'cjs',
 			banner,
 		},
@@ -47,10 +47,10 @@ export default [
 		]
 	},
 	{
-		input: './src/notnow.js',
+		input: './src/notyet.js',
 		output: {
-			name: 'notnow',
-			file: './dist/notnow.min.js',
+			name: 'notyet',
+			file: './dist/notyet.min.js',
 			format: 'umd',
 			banner: "/*! " + urlVer + " */",
 		},

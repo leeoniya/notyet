@@ -2,18 +2,18 @@
 * Copyright (c) 2019, Leon Sorokin
 * All rights reserved. (MIT Licensed)
 *
-* notnow.js
+* notyet.js (NotYet)
 * Lazy image & media loader
-* https://github.com/leeoniya/notnow (v0.1.0)
+* https://github.com/leeoniya/notyet (v0.1.0)
 */
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	(global = global || self, global.notnow = factory());
+	(global = global || self, global.notyet = factory());
 }(this, function () { 'use strict';
 
-	function notnow(opts) {
+	function notyet(opts) {
 		opts = opts || {};
 
 		var target = opts.target || document.body;
@@ -128,6 +128,6 @@
 		}
 	}
 
-	return notnow;
+	return notyet;
 
 }));

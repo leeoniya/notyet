@@ -1,4 +1,4 @@
-function notnow(opts) {
+function notyet(opts) {
 	opts = opts || {};
 
 	const target = opts.target || document.body;
@@ -113,4 +113,4 @@ function notnow(opts) {
 	}
 }
 
-module.exports = notnow;
+module.exports = notyet;
