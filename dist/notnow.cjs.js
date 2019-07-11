@@ -78,7 +78,7 @@ function notnow(opts) {
 				load(el);
 				unwatch(el);
 
-				if (!pending.size == 0 && !mutations)
+				if (!pending.size && !mutations)
 					{ iO.disconnect(); }
 			}
 		});
