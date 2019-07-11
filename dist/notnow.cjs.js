@@ -36,7 +36,7 @@ function notnow(opts) {
 	if (isIE11)
 		NodeList.prototype.forEach = Array.prototype.forEach;
 */
-	queryDOM(lazyClass, target).forEach(function (el) { return pending.add(el); });
+	queryDOM(lazyClass, target).forEach(function (el) { pending.add(el); });
 
 	// load instantly
 	if (!supportsIO || /baidu|(?:google|bing|yandex|duckduck)bot/i.test(navigator.userAgent)) {
@@ -57,7 +57,7 @@ function notnow(opts) {
 			if (nodeName == "PICTURE" || nodeName == "VIDEO")
 				{ queryDOM("source, img", el).forEach(flipAttrs); }
 
-			el.autoplay && win.requestAnimationFrame(function () { return el.load(); });
+			el.autoplay && win.requestAnimationFrame(function () { el.load(); });
 		}
 
 		pending.delete(el);
