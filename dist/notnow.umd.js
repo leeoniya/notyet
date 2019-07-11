@@ -51,8 +51,8 @@
 		function load(el) {
 			willLoad && willLoad(el);
 
-			if (el.dataset.url)
-				{ el.style.backgroundImage = "url(" + el.dataset.url + ")"; }
+			if (el.dataset.bg)
+				{ el.style.backgroundImage = "url(" + el.dataset.bg + ")"; }
 			else {
 				flipAttrs(el);
 

@@ -18,7 +18,7 @@ NotNow is a lazy image & media loader created from Jeremy Wagner's excellent [ya
 **Differences**
 
 - No mutation of `classList` or `className` [Issue #59](https://github.com/malchata/yall.js/issues/59)
-- Backgrounds are lazy-loaded by setting `.lazy` and `data-url` instead of `.lazy-bg` (NotNow will set `element.style.backgroundImage` rather than `classList`).
+- Backgrounds are lazy-loaded by setting `.lazy` and `data-bg` instead of `.lazy-bg` (NotNow will set `element.style.backgroundImage` rather than `classList`).
 - If IntersectionObserver is absent, falls back to instant loading [Issue #51](https://github.com/malchata/yall.js/issues/51)
 - `.lazy` should be set on `<picture>` rather than a child `<img>` fallback element
 - No event binding pass-through (https://github.com/malchata/yall.js#events)
@@ -47,7 +47,7 @@ NotNow is a lazy image & media loader created from Jeremy Wagner's excellent [ya
 
     <iframe class="lazy" data-src="iframe.html"></iframe>
 
-    <div class="lazy" data-url="background.jpg"></div>
+    <div class="lazy" data-bg="background.jpg"></div>
 </body>
 ```
 
