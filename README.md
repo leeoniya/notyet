@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         target: document.body,
         mutations: true,
         class: "lazy",
-        threshold: 200,
+        threshold: "200px",
         willLoad: el => {
             console.log(el);
         }

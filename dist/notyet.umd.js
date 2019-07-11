@@ -20,7 +20,7 @@
 		var lazyClass = "." + (opts.class || "lazy");
 		var mutations = opts.mutations || false;
 		var willLoad = opts.willLoad;
-		var threshold = "threshold" in opts ? opts.threshold : 200 + "px 0%";
+		var threshold = opts.threshold || "200px";
 		var dataAttrs = ["srcset", "src", "poster"];
 
 		var win = window;

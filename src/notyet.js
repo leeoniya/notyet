@@ -5,7 +5,7 @@ function notyet(opts) {
 	const lazyClass = "." + (opts.class || "lazy");
 	const mutations = opts.mutations || false;
 	const willLoad = opts.willLoad;
-	const threshold = "threshold" in opts ? opts.threshold : 200 + "px 0%";
+	const threshold = opts.threshold || "200px";
 	const dataAttrs = ["srcset", "src", "poster"];
 
 	const win = window;
