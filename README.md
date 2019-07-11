@@ -20,7 +20,7 @@ NotYet is a lazy image & media loader created from Jeremy Wagner's excellent [ya
 - No mutation of `classList` or `className` [Issue #59](https://github.com/malchata/yall.js/issues/59)
 - Backgrounds are lazy-loaded by setting `.lazy` and `data-bg` instead of `.lazy-bg` (NotYet will set `element.style.backgroundImage` rather than `classList`).
 - If IntersectionObserver is absent, falls back to instant loading [Issue #51](https://github.com/malchata/yall.js/issues/51)
-- `.lazy` should be set on `<picture>` rather than a child `<img>` fallback element
+- `.lazy` should be set on `<picture>` rather than a child `<img>` fallback element. Note that by default `<picture>` is an [inline element](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements) which will not vertically expand to the size of its contents; simply set it to something like `picture { display: inline-block }` in your base stylesheet.
 - No event binding pass-through (https://github.com/malchata/yall.js#events)
 - `willLoad(element)` event
 - No use of requestIdleCallback - this use case does not benefit much from it
